@@ -150,7 +150,7 @@ Device::createDevice(DeviceManager& d, std::auto_ptr<ConfigRom>( configRom ))
                     return new Device(d, configRom);
             }
         case FW_VENDORID_ESI:
-            if (modelId == 0x00010064) {
+            if (modelId == 0x00000210) {
                 return new ESI::QuataFireDevice(d, configRom);
             }
             break;
